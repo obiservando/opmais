@@ -1,1 +1,1 @@
-Alert('Saudações');
+alert('Saudações');
