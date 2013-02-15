@@ -8,6 +8,7 @@ var d=document.getElementById('wrapper').getElementsByTagName('div'), i=0; for (
 
 function listagem(fx) {
 fx.contentWindow.document.getElementById('wrapper').onclick=function(){ int=setInterval(function(){var d=fx.contentWindow.document.getElementById('wrapper').getElementsByTagName('img'), i=0; for (;i<d.length;){ if(d[i].getAttribute("class")!=null){ if(d[i].getAttribute("class").indexOf ('user-7268')!=-1){d[i].parentNode.parentNode.style.display='none';}} i++}},1000); int2=setTimeout(function(){int=clearInterval(int);},10000);}
+fx.contentWindow.document.getElementById('wrapper').click()
 
 fx.contentWindow.document.head.appendChild(document.createElement('base'));
 fx.contentWindow.document.getElementsByTagName('base')[0].target='_blank'
