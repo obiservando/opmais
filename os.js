@@ -1,4 +1,3 @@
-document.body.style.display='none';
 document.head.appendChild(document.createElement('base'))
 document.getElementsByTagName('base')[0].target='_blank'
 document.getElementById('header').style.display='none';
@@ -20,5 +19,5 @@ fx.contentWindow.document.getElementsByTagName('h2')[0].style.display='none';
 fx.contentWindow.document.getElementsByTagName('h1')[0].style.display='none';
 var d=fx.contentWindow.document.getElementById('wrapper').getElementsByTagName('div'), i=0; for (;i<d.length;){ if(d[i].getAttribute("class")!=null){ var i2 , a=['counts','sidebar']; for (i2 in a){ if(d[i].getAttribute("class")==a[i2]){d[i].style.display='none';}}} i++}
 fx.style.display='block';
-document.body.style.display='block';
+
 }
