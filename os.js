@@ -18,6 +18,6 @@ fx.contentWindow.document.getElementById('footer').style.display='none';
 fx.contentWindow.document.getElementsByTagName('h2')[0].style.display='none';
 fx.contentWindow.document.getElementsByTagName('h1')[0].style.display='none';
 var d=fx.contentWindow.document.getElementById('wrapper').getElementsByTagName('div'), i=0; for (;i<d.length;){ if(d[i].getAttribute("class")!=null){ var i2 , a=['counts','sidebar']; for (i2 in a){ if(d[i].getAttribute("class")==a[i2]){d[i].style.display='none';}}} i++}
-fx.style.display='block';
+  int=setInterval(function(){ if (d[i].style.display=='none'){fx.style.display='block';int=clearInterval(int);}},1000)
 
 }
