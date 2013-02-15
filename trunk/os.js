@@ -18,6 +18,8 @@ var d=fx.contentWindow.document.getElementById('wrapper').getElementsByTagName('
 fx.contentWindow.document.getElementsByTagName('h1')[0].style.display='none';
 fx.contentWindow.document.getElementsByTagName('h2')[0].style.display='none';
 fx.contentWindow.document.getElementById('footer').style.display='none';
+fx.parentNode.parentNode.innerHTML=''
 fx.style.display='block';
+
 
 }
