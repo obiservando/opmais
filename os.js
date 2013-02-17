@@ -2,7 +2,7 @@ document.head.appendChild(document.createElement('base'))
 document.getElementsByTagName('base')[0].target='_blank'
 //document.getElementById('header').style.display='none';
 $(document).ready(function(){
-    $("msg").hide();
+    $(".msg").hide();
 
 });
 
