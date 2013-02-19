@@ -1,13 +1,9 @@
 $(document).ready(function(){
 
   if (location.href.length==37){
-  if($(".dosOPs").html()==null){
-//$(".boxDiscussoesFeatured").after  
-$("#abc9").after('<div class="boxDiscussoesFeatured dosOPs"><h2><span>Destaque dos Observadores:</span></h2><div  style="height:117px;width:736px;overflow:hidden;"><iframe style="position:relative;left:-6px;top:-1px;"  src="https://docs.google.com/presentation/d/1ILEJ9yEL8a0z-QZvJnJaiozXRu7XYTtBsb8_48Xbg3Q/embed?start=true&loop=true&delayms=10000" frameborder="0" width="748" height="148" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" ></iframe></div></div>');
-  };
+ 
+$(".post:has('#abc9')").html('<a href="http://www.observadorpolitico.org.br/grupos/tecnologia/forum/topic/opsimple"><img src="http://www.observadorpolitico.org.br/wp-content/uploads/avatars/9089/95618b3923ca9bfd0475f11193c59813-bpfull.jpg"alt=""class="avatar user-7268-avatar"width="60"height="60"></a><div class="text"><p class="cat">Opinião</p><h3><a href="http://www.observadorpolitico.org.br/grupos/tecnologia/forum/topic/opsimple">Destaque dos Observadores:</a></h3><marquee direction="up"scrolldelay="100"onmouseover="this.scrollAmount=0"onmouseout="this.scrollAmount=2"scrollamount="2"style="height: 90px;width:100%"><iframe style="overflow:hidden;border:none; width:100%;height:400px"src="http://widget.allourideas.org/destaque_dos_observadores/results?locale=pt"scrolling="no"></iframe></marquee><p class="metas"><a href="http://www.observadorpolitico.org.br/observadores/destacam"class="author">Por Destaque dos Observadores</a>, <span class="data">'+ new Date().toLocaleDateString()+' às '+ new Date().toLocaleTimeString()+'</span><a href="http://www.observadorpolitico.org.br/grupos/tecnologia/forum/topic/opsimple"class="comments"title="Destaque dos Observadores:"> / Votar/Opinar/Ideias</a></p></div><div class="clear"></div>');
+
  };
-  
-$("#abc9").remove();
-$("a[title^='<img id=abc9']").attr("title","Votar");
 
 });
