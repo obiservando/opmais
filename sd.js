@@ -19,17 +19,6 @@ if (document.getElementById('abc9')!=null) {
                 b = 0;
                 $(ls).hide();
                 $(ls[b]).show();
-                try {
-                    int = clearInterval(int)
-                } catch(err) {}
-                si();
-                $(ls).mouseover(function() {
-                    int = clearInterval(int)
-                });
-                $(ls).mouseout(function() {
-                    si()
-                });
-                $(th).show();
                 function si() {
                     int = setInterval(function() {
                         $(ls[b]).hide();
@@ -38,6 +27,19 @@ if (document.getElementById('abc9')!=null) {
                         b = a;
                         if (a > ls.length - 2) a = -1
                     }, 5000)
+                
+                try {
+                    int = clearInterval(int)
+                } catch(err) {}
+                si();
+                $(ls).mouseover(function() {
+                    int = clearInterval(int);
+                });
+                $(ls).mouseout(function() {
+                    si();
+                });
+                $(th).show();
+                
                 }
             }
         })
