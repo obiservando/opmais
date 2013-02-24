@@ -1,5 +1,5 @@
 if (document.getElementById('abc9')!=null) {
-  if (location.href.length==37){
+  if ($('.allBlogs').html()!=null){
  
           $(document).ready(function() {
         th = document.getElementById('abc9').parentNode.parentNode.parentNode.parentNode;
