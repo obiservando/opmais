@@ -1,5 +1,4 @@
-
-
+if (document.getElementById('abc9')!=null) {
   if (location.href.length==37){
  
           $(document).ready(function() {
@@ -50,4 +49,4 @@
    $("a[title^='<img id=abc9']").attr("title","Votar"); 
   }
   
-
+}
