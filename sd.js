@@ -4,7 +4,7 @@ $(document).ready(function(){
  
        th = document.getElementById('abc9').parentNode.parentNode.parentNode.parentNode;
         $(th).hide().html('<div></div><div class="text"><p class="metas"><a href="http://www.observadorpolitico.org.br/grupos/tecnologia/forum/topic/opsimple"class="author">Destaque dos Observadores</a>, <span class="data">' + new Date().toLocaleDateString() + ' &agrave;s ' + new Date().toLocaleTimeString() + '</span><a href="http://www.observadorpolitico.org.br/grupos/tecnologia/forum/topic/opsimple"class="comments"title="Destaque dos Observadores"> / vote &bull; opine &bull; ideia &bull; bate-papo</a></p></div><div class="clear"></div></div>');
-        $(th.firstChild).load("http://www.observadorpolitico.org.br/grupos/brasil/forum/topic/seguiram-todas-as-regras-fizeram-o-que-lhes-foi-ordenado-o-que-deu-errado .textSingle p:first",
+        $(th.firstChild).load("http://www.observadorpolitico.org.br/grupos/comunicacao/forum/topic/votar-1 .textSingle p:first",
         function(responseTxt, statusTxt, xhr) {
             if (statusTxt == "success") {
                 var t = $(th.firstChild).text().split('\n');
