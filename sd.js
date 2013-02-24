@@ -37,8 +37,7 @@ if (document.getElementById('abc9')!=null) {
                         $(ls[a]).fadeIn("slow");
                         b = a;
                         if (a > ls.length - 2) a = -1
-                    },
-                    5000)
+                    }, 5000)
                 }
             }
         })
