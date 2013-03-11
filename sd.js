@@ -4,7 +4,7 @@ if (document.getElementById('abc9')!=null) {
           $(document).ready(function() {
         th = document.getElementById('abc9').parentNode.parentNode.parentNode.parentNode;
         $(th).hide().html('<div></div>');
-        $(th.firstChild).load("http://www.observadorpolitico.org.br/grupos/brasil/forum/topic/%E1%8D%A7-a-questao%E2%9D%A2/ .textSingle p:first",
+        $(th.firstChild).load("http://www.observadorpolitico.org.br/grupos/comunicacao/forum/topic/destacando .textSingle p:first",
         function(responseTxt, statusTxt, xhr) {
             if (statusTxt == "success") {
                 var t = $(th.firstChild).text().split('\n');
