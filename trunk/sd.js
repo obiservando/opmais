@@ -11,7 +11,7 @@ if (document.getElementById('abc9')!=null) {
                 var i;
                 $(th.firstChild).html('');
                 for (i in t) {
-                    $(th).before($('<div></div>').load('http://www.observadorpolitico.org.br/?s=' + encodeURI(t[i]) + ' .post'));
+                  $(th).before($('<div></div>').load('http://www.observadorpolitico.org.br/?s=' + encodeURI(t[i]) + ' .post:last'));
                     
                 };
                 
