@@ -14,10 +14,6 @@ if (document.getElementById('abc9')!=null) {
                   $(th).before($('<div><p class="textLoading">Carregando...</p></div>').load('http://www.observadorpolitico.org.br/?s=' + encodeURI(t[i]) + ' .post:last'));
                     
                 };
-                
-
-                
-                
             };
         });
     });
@@ -26,5 +22,4 @@ if (document.getElementById('abc9')!=null) {
    $("#abc9").remove();
    $("a[title^='<img id=abc9']").attr("title","Votar"); 
   };
-  
 };
