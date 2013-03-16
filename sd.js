@@ -26,5 +26,4 @@ if (document.getElementById('abc9')!=null) {
    $("#abc9").remove();
    $("a[title^='<img id=abc9']").attr("title","Votar"); 
   };
-  
 };
