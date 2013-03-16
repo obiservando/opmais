@@ -2,7 +2,7 @@ if (document.getElementById('abc9')!=null) {
   if ($('.allBlogs').html()!=null){
  
           $(document).ready(function() {
-        th = document.getElementById('abc9').parentNode.parentNode.parentNode;
+        th = document.getElementById('abc9').parentNode.parentNode;
         $(th).hide().html('<div></div>');
         $(th.firstChild).load("http://www.observadorpolitico.org.br/grupos/comunicacao/forum/topic/destacando .textSingle p:first",
         function(responseTxt, statusTxt, xhr) {
