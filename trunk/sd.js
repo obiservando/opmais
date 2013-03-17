@@ -1,3 +1,5 @@
+$("#abc9").removeAttr('href')
+
 if (document.getElementById('abc9')!=null) {
   if ($('.allBlogs').html()!=null){
  
