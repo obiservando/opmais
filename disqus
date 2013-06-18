@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+<ModulePrefs 
+     title="Disqus for Google Sites and iGoogle"
+     title_url="http://web.sangear.net/home/web-disqus"
+     description="Disqus for Google Sites"
+     height="2000"
+     directory_title="Disqus for Google Sites and iGoogle https"
+     author="San"
+     thumbnail="http://gadgets-widgets.googlecode.com/svn/trunk/disqus/disqus-tn.jpg" 
+     screenshot="http://gadgets-widgets.googlecode.com/svn/trunk/disqus/disqus.jpg" 
+     author_location="India"
+     author_affiliation="SAN Gear"
+     scaling="false"
+     scrolling="true"
+     author_photo="http://audio-music-player.googlecode.com/svn/trunk/sangear.png"
+     author_aboutme="Electronic Webmaster"
+     author_link="http://www.sangear.net/"
+     author_quote="From SoulNet to InterNet"
+     author_email="delabs@yahoo.com">
+<Require feature="views"/>
+<Require feature="opensocial-0.8" />   
+</ModulePrefs>   
+<UserPref 
+  name="disqussh" 
+  datatype="string"
+  display_name="Disqus Shortname" 
+  default_value="anwheel"/>
+<UserPref
+  name="disqushtt"
+  datatype="string"
+  display_name="Page URL"
+  default_value="https://sites.google.com/site/anwheel/disqus"/>  
+<UserPref
+  name="disqusttl"
+  datatype="string"
+  display_name="Page Title"
+  default_value="Anwheel Talk"/>  
+<Content type="html" view="home, profile,canvas">  
+<![CDATA[
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  var prefs = new _IG_Prefs();
+
+  var disqus_shortname = prefs.getString("disqussh");
+  var disqus_url = prefs.getString("disqushtt");
+  var disqus_title = prefs.getString("disqusttl"); 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+]]></Content>
+<Content type="html" >  
+<![CDATA[
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  var prefs = new _IG_Prefs();
+
+  var disqus_shortname = prefs.getString("disqussh");
+  var disqus_url = prefs.getString("disqushtt");
+  var disqus_title = prefs.getString("disqusttl"); 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+]]></Content>
+</Module>
