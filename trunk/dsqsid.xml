@@ -23,8 +23,19 @@
   name="disqus_identifier" 
   display_name="ID única"
   default_value="1"/>
-
-<Content type="html"><![CDATA[
+  
+<UserPref 
+  name="disqus_title" 
+  display_name="Título da página"
+  default_value=""/>
+  
+<UserPref 
+  name="disqus_url" 
+  display_name="URL da página"
+  default_value=""/>
+  
+<Content type="html">
+<![CDATA[
   
 
     <div id="disqus_thread"></div>
@@ -33,7 +44,9 @@
 	var prefs = new _IG_Prefs(); 
 
         var disqus_shortname = prefs.getString("disqus_shortname");
-	var disqus_identifier = prefs.getString("disqus_identifier");
+        var disqus_identifier = prefs.getString("disqus_identifier");
+        var disqus_title = prefs.getString("disqus_title");
+        var disqus_url = prefs.getString("disqus_url");
 
 
         (function() {
@@ -46,5 +59,6 @@
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     
   
-]]></Content>
+]]>
+</Content>
 </Module>
