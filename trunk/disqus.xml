@@ -7,11 +7,16 @@
   thumbnail="" 
   screenshot="" 
   height="800" width="600" 
+  scaling="false"
+  scrolling="true"
   author="" 
   author_email="" 
   author_location="" 
   author_affiliation="" 
   directory_title="Disqus comments">
+<Require feature="views"/>
+<Require feature="opensocial-0.8" /> 
+
 </ModulePrefs>
   
 <UserPref 
@@ -29,7 +34,38 @@
   name="disqus_url" 
   display_name="URL da página"
   default_value=""/>
+ 
+<Content type="html" view="home, profile,canvas">
+<![CDATA[
   
+
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+
+	var prefs = new _IG_Prefs(); 
+
+        var disqus_shortname = prefs.getString("disqus_shortname");
+        var disqus_title = prefs.getString("disqus_title");
+        var disqus_url = prefs.getString("disqus_url");
+
+
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+
+
+
+  </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+  
+]]>
+</Content> 
+ 
+ 
 <Content type="html">
 <![CDATA[
   
