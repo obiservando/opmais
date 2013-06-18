@@ -20,18 +20,18 @@
 </ModulePrefs>
   
 <UserPref 
-  name="disqus_shortname" 
+  name="disqusshortn" 
   display_name="Nome curto Disqus" 
   default_value="nomecurto"/>
 
   
 <UserPref 
-  name="disqus_title" 
+  name="disqustitle" 
   display_name="Título da página"
   default_value=""/>
   
 <UserPref 
-  name="disqus_url" 
+  name="disqusURL" 
   display_name="URL da página"
   default_value=""/>
  
@@ -44,9 +44,9 @@
 
 	var prefs = new _IG_Prefs(); 
 
-        var disqus_shortname = prefs.getString("disqus_shortname");
-        var disqus_title = prefs.getString("disqus_title");
-        var disqus_url = prefs.getString("disqus_url");
+        var disqus_shortname = prefs.getString("disqusshortn");
+        var disqus_title = prefs.getString("disqustitle");
+        var disqus_url = prefs.getString("disqusURL");
 
 
         (function() {
@@ -54,8 +54,6 @@
             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
-
-
 
   </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
@@ -75,9 +73,9 @@
 
 	var prefs = new _IG_Prefs(); 
 
-        var disqus_shortname = prefs.getString("disqus_shortname");
-        var disqus_title = prefs.getString("disqus_title");
-        var disqus_url = prefs.getString("disqus_url");
+        var disqus_shortname = prefs.getString("disqusshortn");
+        var disqus_title = prefs.getString("disqustitle");
+        var disqus_url = prefs.getString("disqusURL");
 
 
         (function() {
@@ -85,8 +83,6 @@
             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
-
-
 
   </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
