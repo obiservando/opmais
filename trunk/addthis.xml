@@ -5,11 +5,11 @@
 <!-- AddThis Button BEGIN -->
 <a href="http://www.addthis.com/bookmark.php" onclick="addthis_url = 'http://www.acampada.tv'; addthis_title = 'Acampada TV, Nos quadamos'; return addthis_click(this);" target="_blank">
 
-<img src="http://s7.addthis.com/static/btn/lg-share-en.gif" width="125" height="16" border="0" alt="Bookmark and Share" /></a>
+<img src="//s7.addthis.com/static/btn/lg-share-en.gif" width="125" height="16" border="0" alt="Bookmark and Share" /></a>
 
 <script type="text/javascript">var addthis_pub = "[ra-4de62ecb5631ef3f]";</script>
 
-<script type="text/javascript" src="http://s7.addthis.com/js/widget.php?v=10"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/widget.php?v=10"></script>
 <!-- AddThis Button END -->
 
 ]]></Content></Module>
